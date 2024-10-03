@@ -1,0 +1,1 @@
+-- Aquí va el código para la creación de un trigger en la base de datos

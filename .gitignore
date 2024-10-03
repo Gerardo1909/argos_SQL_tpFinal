@@ -1,0 +1,51 @@
+# Archivos de respaldo y archivos temporales
+*~
+*.swp
+*.bak
+
+# Archivos de caché
+__pycache__/
+.cache/
+
+# Logs y archivos de registro
+*.log
+
+# Directorios y archivos de entornos virtuales
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribucion / paquetes
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Directorios y archivos de dependencias
+/.idea
+/.vscode
+/.vs
+
+# Archivos de configuración local
+*.env
+
+# Archivos de control de versión
+.gitkeep

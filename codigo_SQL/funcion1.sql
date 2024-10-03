@@ -1,0 +1,1 @@
+-- Aquí va el código para la creación de una función en la base de datos

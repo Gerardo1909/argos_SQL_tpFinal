@@ -1,0 +1,1 @@
+-- Aquí va el código para obtener un dato de la tabla C a partir de uno de A
