@@ -27,7 +27,7 @@ se ha decidido considerar los siguientes:
 * Planificar y monitorear las misiones de investigación en las que participan los **satélites**, asegurando que se cumplan los objetivos de las mismas.
 
 
-### Aclaración
+## Aclaración
 
 Este proyecto tiene **fines académicos**, por lo tanto las entidades representadas, acciones realizadas y necesidades planteadas sobre el mismo
 están limitadas a ser lo más representativas posibles, pero jamás replicando **exactamente** la realidad.
