@@ -1,4 +1,4 @@
-# Documentación de las tablas de la base de datos para **Argos**
+# Documentación para tablas: Sistema de Base de Datos para **Argos**
 
 A partir del escenario propuesto para **Argos**, el siguiente paso es desarrollar una base de datos que **satisfaga sus necesidades**. Un componente fundamental para alcanzar este objetivo es documentar detalladamente todas las tablas que compondrán la base de datos, describiendo claramente el propósito de cada una. Esta documentación no solo facilitará la comprensión de la presencia y función de cada tabla en el **DER** (Diagrama Entidad-Relación), sino que también garantizará que sigamos buenas prácticas durante la implementación de la base de datos.
 

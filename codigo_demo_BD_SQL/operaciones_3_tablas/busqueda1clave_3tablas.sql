@@ -1,0 +1,1 @@
+-- Aquí va el código de busqueda sobre 1 clave de tres tablas

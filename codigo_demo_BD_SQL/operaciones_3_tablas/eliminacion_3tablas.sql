@@ -1,0 +1,1 @@
+-- Aquí va el código para la eliminación de tres tablas
