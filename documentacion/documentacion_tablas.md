@@ -152,8 +152,8 @@ Las categorías definidas en cada tabla fueron modeladas de la forma más repres
    - **Campo clave:** `id_ubicacion_estacion` (**PK, SERIAL**)
    - **Campo categórico:** `nombre_ubicacion` (**VARCHAR(100)**)
    - **Valores:** 
-     - *Estación Norte*: Ubicada en una región ficticia del hemisferio norte.
-     - *Estación Sur*: Situada en una región ficticia del hemisferio sur.
-     - *Estación Central*: Ubicada en una región ecuatorial.
-     - *Estación Este*: Situada en una región ficticia oriental.
-     - *Estación Oeste*: Ubicada en una región ficticia occidental.
+     - *Región Norte*: Ubicada en una región ficticia del hemisferio norte.
+     - *Región Sur*: Situada en una región ficticia del hemisferio sur.
+     - *Región Central*: Ubicada en una región ecuatorial.
+     - *Región Este*: Situada en una región ficticia oriental.
+     - *Región Oeste*: Ubicada en una región ficticia occidental.
