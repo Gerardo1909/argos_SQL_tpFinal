@@ -55,7 +55,7 @@ Las **entidades principales** representan los objetos centrales del sistema y so
      - `nombre_estacion` (**VARCHAR(100)**): Nombre de la estación.
      - `id_ubicacion_estacion` (**FK, INTEGER**): Clave foránea que conecta la estación con su ubicación geográfica.
      - `id_proposito_estacion` (**FK, INTEGER**): Clave foránea que describe el propósito de la estación (por ejemplo, recepción de datos de satélites de observación terrestre, comunicaciones).
-     - `id_estado_operacional` (**FK, INTEGER**): Clave foránea que indica el estado operativo de la estación (operativa, en mantenimiento).
+     - `id_estado_operacion` (**FK, INTEGER**): Clave foránea que indica el estado operativo de la estación (operativa, en mantenimiento).
 
 
 ## Dominio de los Datos para las entidades asociativas

@@ -8,4 +8,7 @@ VALUES ('Misión Alpha', '2023-01-01', '2023-06-01', 'Estudio de patrones climá
        ('Misión Eta', '2023-07-01', '2023-12-01', 'Monitoreo de la deforestación'),
        ('Misión Theta', '2023-08-01', '2024-01-01', 'Investigación de corrientes oceánicas'),
        ('Misión Iota', '2023-09-01', '2024-02-01', 'Análisis de la calidad del aire'),
-       ('Misión Kappa', '2023-10-01', '2024-03-01', 'Observación de fenómenos volcánicos');
+       ('Misión Kappa', '2023-10-01', '2024-03-01', 'Observación de fenómenos volcánicos'),
+       ('Misión Aether', '2023-02-01', '2023-07-01', 'Mejora de la infraestructura de telecomunicaciones globales'),
+       ('Misión Dionysos', '2023-10-01', '2024-03-01', 'Monitoreo y mejora de señales de comunicación satelital terrestre'),
+       ('Misión Selene', '2023-08-01', '2024-01-01', 'Ampliación de la red de satélites para telecomunicaciones comerciales');

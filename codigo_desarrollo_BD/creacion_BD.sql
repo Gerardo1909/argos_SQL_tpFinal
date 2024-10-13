@@ -64,7 +64,7 @@ CREATE TABLE "observacion" (
 
 CREATE TABLE "imagen" ( 
 	"id_imagen" SERIAL PRIMARY KEY,
-	"id_observacion" INTEGER,
+	"id_observacion" INTEGER UNIQUE,
 	"url_imagen" VARCHAR(255),
 	"resolucion" VARCHAR(50),
 	CONSTRAINT fk_observacion FOREIGN KEY ("id_observacion") REFERENCES "observacion"("id_observacion")
@@ -93,10 +93,10 @@ CREATE TABLE "estacion_terrestre" (
 	"nombre_estacion" VARCHAR(100),
 	"id_ubicacion_estacion" INTEGER,
 	"id_proposito_estacion" INTEGER,
-	"id_estado_operacional" INTEGER,
+	"id_estado_operacion" INTEGER,
 	CONSTRAINT fk_ubicacion_estacion FOREIGN KEY ("id_ubicacion_estacion") REFERENCES "ubicacion_estacion"("id_ubicacion_estacion"),
 	CONSTRAINT fk_proposito_estacion FOREIGN KEY ("id_proposito_estacion") REFERENCES "proposito_estacion"("id_proposito_estacion"),
-	CONSTRAINT fk_estado_operacional FOREIGN KEY ("id_estado_operacional") REFERENCES "estado_operacion"("id_estado_operacion")
+	CONSTRAINT fk_estado_operacional FOREIGN KEY ("id_estado_operacion") REFERENCES "estado_operacion"("id_estado_operacion")
 );
 
 CREATE TABLE "estacion_satelite" (
