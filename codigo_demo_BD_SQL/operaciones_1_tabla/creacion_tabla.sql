@@ -1,5 +1,3 @@
--- Aquí va el código para la creación de una tabla
-
 CREATE TABLE "estacion_terrestre" (
 	"id_estacion" SERIAL PRIMARY KEY,
 	"nombre_estacion" VARCHAR(100),
