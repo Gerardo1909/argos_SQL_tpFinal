@@ -1,1 +1,4 @@
--- Aquí va el código para obtener un dato de la tabla B a partir de uno de C
+SELECT ms.id_mision
+FROM satelite s
+JOIN mision_satelite ms ON s.id_satelite = ms.id_satelite
+WHERE s.nombre_satelite = 'Asterion';

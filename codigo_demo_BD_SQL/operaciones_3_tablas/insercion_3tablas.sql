@@ -7,8 +7,3 @@ RETURNING id_mision INTO v_id_mision; -- Utilizo una variable temporal para sabe
 INSERT INTO mision_satelite (id_mision, id_satelite)
 VALUES (v_id_mision, 1);
 
-DELETE FROM mision_satelite
-WHERE id_mision = v_id_mision;
-
-DELETE FROM mision
-WHERE id_mision = v_id_mision;
