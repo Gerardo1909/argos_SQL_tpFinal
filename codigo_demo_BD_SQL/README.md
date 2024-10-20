@@ -17,14 +17,6 @@ respecto a las operaciones realizadas sobre la base de datos.
     - [Indices](operaciones_1_tabla/indice_tabla.sql)
     - [Búsqueda de una clave](operaciones_1_tabla/busqueda1clave_tabla.sql)
     - [Búsqueda de dos claves](operaciones_1_tabla/busqueda2claves_tabla.sql)
-* **Operaciones sobre tres tablas relacionadas linealmente**
-    - [Creación](operaciones_3_tablas/creacion_3tablas.sql)
-    - [Eliminación](operaciones_3_tablas/eliminacion_3tablas.sql)
-    - [Inserción](operaciones_3_tablas/insercion_3tablas.sql)
-    - [Actualización](operaciones_3_tablas/actualizacion_3tablas.sql)
-    - [Indices](operaciones_3_tablas/indice_3tablas.sql)
-    - [Búsqueda de una clave](operaciones_3_tablas/busqueda1clave_3tablas.sql)
-    - [Búsqueda de dos claves](operaciones_3_tablas/busqueda2claves_3tablas.sql)
 * **Consultas sobre tres tablas relacionadas linealmente**
     - [A partir de un dato contenido en A conseguir uno de C](operaciones_3_tablas/dato_A_C.sql)
     - [A partir de un dato contenido en C conseguir uno de B](operaciones_3_tablas/dato_C_B.sql)

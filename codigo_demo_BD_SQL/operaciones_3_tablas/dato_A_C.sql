@@ -1,5 +1,8 @@
-SELECT s.nombre_satelite
-FROM mision m
-JOIN mision_satelite ms ON m.id_mision = ms.id_mision
-JOIN satelite s ON ms.id_satelite = s.id_satelite
-WHERE m.nombre_mision = 'Misión Omega';
+SELECT 
+    tipo_satelite.tipo_satelite,
+    COUNT(mision_satelite.id_mision) AS cantidad_misiones
+FROM tipo_satelite
+    JOIN satelite ON satelite.id_tipo_satelite = tipo_satelite.id_tipo_satelite
+    JOIN mision_satelite ON mision_satelite.id_satelite = satelite.id_satelite
+GROUP BY tipo_satelite.tipo_satelite
+ORDER BY cantidad_misiones DESC;
