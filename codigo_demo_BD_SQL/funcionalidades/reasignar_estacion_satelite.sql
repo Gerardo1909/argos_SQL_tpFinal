@@ -73,7 +73,7 @@ BEGIN
 
     -- Finalmente reasigno el satélite a la nueva estación
     UPDATE estacion_satelite
-    SET id_estacion_terrestre = p_nueva_estacion
+    SET id_estacion_terrestre = p_id_nueva_estacion
     WHERE id_satelite = p_id_satelite AND id_estacion_terrestre = p_id_estacion_anterior;
 
 END;
