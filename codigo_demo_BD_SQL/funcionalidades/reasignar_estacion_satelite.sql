@@ -8,6 +8,7 @@ DECLARE
     v_id_estacion_anterior INT;
     v_id_estacion_nueva INT;
     v_id_relacion INT;
+    v_id_nueva_relacion INT;
 BEGIN
     -- Verifico si la estación terrestre anterior existe
     SELECT 
@@ -43,6 +44,18 @@ BEGIN
     -- De no existir lanzo una excepción
     IF v_id_estacion_nueva IS NULL THEN
         RAISE EXCEPTION 'La estación terrestre con id % no existe', p_nueva_estacion;
+    END IF;
+
+    -- Verifico que el satélite indicado y la nueva estación no estén relacionados
+    SELECT 
+        id_estacion_satelite
+    INTO v_id_nueva_relacion
+    FROM estacion_satelite 
+    WHERE id_estacion_terrestre = p_id_nueva_estacion AND id_satelite = p_id_satelite;
+
+    -- De existir la relación lanzo una excepción
+    IF v_id_nueva_relacion IS NOT NULL THEN
+        RAISE EXCEPTION 'La estación terrestre con id % ya tiene asociado al satélite con id %', p_id_nueva_estacion, p_id_satelite;
     END IF;
 
     -- Finalmente reasigno el satélite a la nueva estación
