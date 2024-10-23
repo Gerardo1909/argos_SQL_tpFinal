@@ -9,7 +9,20 @@ DECLARE
     v_id_estacion_nueva INT;
     v_id_relacion INT;
     v_id_nueva_relacion INT;
+    v_id_satelite INT;
 BEGIN
+    -- Verifico si el satélite indicado existe
+    SELECT 
+        id_satelite 
+    INTO v_id_satelite
+    FROM satelite 
+    WHERE id_satelite = p_id_satelite;
+
+    -- De no existir lanzo una excepción
+    IF v_id_satelite IS NULL THEN
+        RAISE EXCEPTION 'El satélite de id % no existe', p_id_satelite;
+    END IF;
+
     -- Verifico si la estación terrestre anterior existe
     SELECT 
         id_estacion 
