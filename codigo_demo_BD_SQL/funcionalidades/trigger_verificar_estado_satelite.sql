@@ -8,10 +8,10 @@ BEGIN
         id_estado
     INTO estado_satelite 
     FROM satelite 
-    WHERE id_satelite = NEW.id_satelite
+    WHERE id_satelite = NEW.id_satelite;
 
     -- Verifico que el satélite del cual se quiere insertar observaciones esté activo
-    IF estado_satelite != 1 THEN
+    IF estado_satelite <> 1 THEN
         RAISE EXCEPTION 'Se está tratando de insertar observaciones pertenecientes a un satélite que no está activo';
     END IF;
 
