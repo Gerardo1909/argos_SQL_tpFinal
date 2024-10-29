@@ -1,6 +1,6 @@
 CREATE OR REPLACE FUNCTION actualizar_estado_satelite(
     p_id_satelite INT,
-    p_estado_satelite VARCHAR(50)
+    p_id_estado INT
 )
 RETURNS VOID AS $$
 DECLARE
@@ -24,11 +24,11 @@ BEGIN
         id_estado_satelite 
     INTO v_id_estado
     FROM estado_satelite 
-    WHERE estado_satelite = p_estado_satelite;
+    WHERE id_estado_satelite = p_id_estado;
 
     -- Si no existe, lanzo una excepción
     IF v_id_estado IS NULL THEN
-        RAISE EXCEPTION 'El estado del satélite % no existe', p_estado_satelite;
+        RAISE EXCEPTION 'El estado del satélite de id % no existe', p_id_estado;
     END IF;
 
     -- Finalmente, actualizo el estado del satélite
